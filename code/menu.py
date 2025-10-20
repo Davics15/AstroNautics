@@ -22,6 +22,12 @@ class Menu:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(50, "Operation", C_ORANGE, ((WIN_WIDTH / 2), 60))
             self.menu_text(50, "Nautics", C_ORANGE, ((WIN_WIDTH / 2), 100))
+            self.menu_text(15, "UP = GO UP", C_ORANGE, (33, 255))
+            self.menu_text(15, "DOWN = GO DOWN", C_ORANGE, (50, 270))
+            self.menu_text(15, "LEFT = GO LEFT", C_ORANGE, (44, 285))
+            self.menu_text(15, "RIGHT = GO RIGHT", C_ORANGE, (50, 300))
+            self.menu_text(15, "CTRL = SHOOT", C_ORANGE, (40, 315))
+
 
             for i in range(len(MENU_OPTION)):
                 if i ==menu_option:
