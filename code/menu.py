@@ -19,8 +19,8 @@ class Menu:
         pygame.mixer.music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Shinobi", COLOR_ORANGE, ((WIN_WIDTH / 2), 60))
-            self.menu_text(50, "Expedition", COLOR_ORANGE, ((WIN_WIDTH / 2), 100))
+            self.menu_text(50, "Shinobi", COLOR_WHITE, ((WIN_WIDTH / 2), 60))
+            self.menu_text(50, "Expedition", COLOR_WHITE, ((WIN_WIDTH / 2), 100))
 
             for i in range(len(MENU_OPTION)):
                 self.menu_text(27, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 180 + 30 * i))
